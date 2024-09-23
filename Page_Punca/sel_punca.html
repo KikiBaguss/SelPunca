@@ -12,14 +12,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    
+     <!-- Favicon -->
+     <link rel="icon" href="https://yankes.kemkes.go.id/faticon.ico">
+
+     <!-- <link href="https://yankes.kemkes.go.id/css/fullcalendar.min.css" rel="stylesheet" />
+     <link href="https://yankes.kemkes.go.id/css/fullcalendar.print.min.css" rel="stylesheet" media="print" /> -->
+     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+     <!-- <link rel="stylesheet" href="https://yankes.kemkes.go.id/css/select2.min.css"/> -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" /> -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://yankes.kemkes.go.id/css/style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet" />
+ <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet"> -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     rel="stylesheet">
+ <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+     integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg=="
+     crossorigin="anonymous" />
+ <script src="https://yankes.kemkes.go.id/ckeditor/ckeditor.js" type="text/javascript"></script>
+        <script src="https://yankes.kemkes.go.id/js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="https://yankes.kemkes.go.id/js/plugins/plugins.js"></script>
+        <!-- <script src="https://yankes.kemkes.go.id/js/moment.min.js"></script>
+    <script src="https://yankes.kemkes.go.id/js/fullcalendar.min.js"></script> -->
+        <!-- <script src="https://yankes.kemkes.go.id/js/bootstrap/popper.min.js"></script> -->
+        <!-- <script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script> -->
+        <!-- <script src="https://yankes.kemkes.go.id/js/bootstrap/bootstrap.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <!-- <script src="https://yankes.kemkes.go.id/js/select2.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script> -->
+
     <style>
         * {
             padding: 0;
             margin: 0;
           }
           body {
-            font-family: "Poppins", sans-serif;
-            background-color: #fffff0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFF0;
           }
           
           h1,
@@ -37,6 +73,7 @@
           ul,
           li {
             font-family: "Poppins", sans-serif;
+            color: #777777;
           }
           
           a,
@@ -59,6 +96,7 @@
           
           .breadcrumb-item a:hover {
             text-decoration: none;
+        
           }
           
           .custom-header {
@@ -70,6 +108,7 @@
             margin: 0;
             font-weight: bold;
             padding: 5px flex;
+            
           }
           .tombol {
             padding: 10px;
@@ -81,11 +120,17 @@
             font-weight: 500;
 
           }
-          
 
+        a:hover {
+            text-decoration: underline;
+        }
+          
           img {
               width:200px;
               height:200px;
+          }
+          .dist-list li{
+            list-style: disc;
           }
 
     </style>
@@ -112,12 +157,12 @@
     
     <!-- Header Section -->    
     <div class="container mt-2">
-        <div class="card shadow-sm">
-            <div class="card-body">
+        <img src="asset/gambar/logopunccaa.png" alt="" class="img-fluid w-100" style="border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;">
+        <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%;">
+            <div class="card-body" >
                 <div class="row">
-
                     <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
@@ -135,7 +180,7 @@
                     </div>
 
                     <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
@@ -148,7 +193,7 @@
                                     <p>
                                         Pelayanan dengan Terapi Sel Punca saat ini masih terus dikembangkan khususnya untuk berbagai penyakit kronis dan penyakit degeneratif yang belum bisa disembuhkan dengan obat-obatan yang sudah ada. Beberapa potensi sel punca diantaranya yaitu dapat meredakan peradangan, menjaga keseimbangan sistem imun, agen anti-mikrobial, dan lain-lain. Potensi tersebut dapat dimanfaatkan dalam proses penyembuhan penyakit degeneratif seperti;
                                     </p>
-                                    <ul class="col-md" style="margin-left: 10px;">
+                                    <ul class="dist-list col-md" style="margin-left: 10px;">
                                         <li>Cedera Tulang Belakang</li>
                                         <li>Alzheimer</li>
                                         <li>Jantung</li>
@@ -162,9 +207,9 @@
                             </div>
                         </div>
 
-                    <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
-                        <div class="custom-header ">
+                    <div class="container" style="margin-top: 20px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <div class="custom-header">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
                                 <h5>Dimana Bisa Didapatkan Pelayanan Terapi Sel Punca?</h5>
@@ -180,41 +225,41 @@
                                 </div>
                             </div>
                         <div class="">
-                            <img src="asset/suster.png" alt="Sel punca" style="width: 100px;height:100px;">
-                            <button class="tombol">
-                                LIHAT DAFTAR FASYANKES SEL PUNCA</button>
+                            <img src="asset/gambar/suster.png" alt="suster_img" style="width: 100px;height:100px;">
+                                <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf">
+                                    <button class="tombol">LIHAT DAFTAR FASYANKES SEL PUNCA</button>
+                                </a>
                         </div>
                     </div>
 
                     <div class="container" style="margin-top: 20px;">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
                                 <h5>Apakah Sel Punca Ada Risiko Yang Dapat Membahayakan?</h5>
                                 </div>
                             </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md">
-                            <p>
-                                Pelayanan dengan Terapi Sel Punca saat ini masih terus dikembangkan khususnya untuk berbagai penyakit kronis dan penyakit degeneratif yang belum bisa disembuhkan dengan obat-obatan yang sudah ada. Beberapa potensi sel punca diantaranya yaitu dapat meredakan peradangan, menjaga keseimbangan sistem imun, agen anti-mikrobial, dan lain-lain. Potensi tersebut dapat dimanfaatkan dalam proses penyembuhan penyakit degeneratif seperti;
-                            </p>
-                            <ul class="col-md" style="margin-left: 10px;">
-                                <li>Setiap terapi yang dilakukan pasti memiliki risiko. risiko pemberian sel punca dipengaruhi oleh beberapa faktor diantaranya :</li>
-                                <dl>
-                                    <dd>- Kondisi pasien (pasien harus memenuhi persyaratan screening, resiko reaksi hipersensitivitas),</dd>
-                                    <dd>- Produk sel punca yang digunakan, metode pemberian, dan lokasi pemberian,</dd>
-                                    <dd>- Terapi sel dapat menyebabkan respon imun yang tidak diinginkan, meningkatkan risiko tumor, serta 2 menimbulkan toksisitas dan hipersensitivitas pada beberapa pasien.</dd>                                                                            
-                                </dl>
-                                <li>Oleh sebab itu, pelaksanaan terapi harus dilakukan oleh dokter sesuai keahliannya dan di <a href="" style="color: #0E7478;">fasyankes yang mendapat izin.</a></span></li>
-                            </ul>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md">
+                                <ul class="col-md dist-list" style="margin-left: 10px;">
+                                    <li>Setiap terapi yang dilakukan pasti memiliki risiko. risiko pemberian sel punca dipengaruhi oleh beberapa faktor diantaranya :</li>
+                                    <dl>
+                                        <dd>- Kondisi pasien (pasien harus memenuhi persyaratan screening, resiko reaksi hipersensitivitas),</dd>
+                                        <dd>- Produk sel punca yang digunakan, metode pemberian, dan lokasi pemberian,</dd>
+                                        <dd>- Terapi sel dapat menyebabkan respon imun yang tidak diinginkan, meningkatkan risiko tumor, serta 2 menimbulkan toksisitas dan hipersensitivitas pada beberapa pasien.</dd>                                                                            
+                                    </dl>
+                                    <li>Oleh sebab itu, pelaksanaan terapi harus dilakukan oleh dokter sesuai keahliannya dan di <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf" style="color: #0E7478;">fasyankes yang mendapat izin.</a></span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    
 
 
-                    <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                    <div class="container" style="margin-top: 20px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
@@ -231,11 +276,10 @@
                                 </div>
                             </div>                  
                         </div>
-                    </div>
                     
 
                     <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
@@ -245,30 +289,159 @@
                         </div>
                         <div class="row mt-3">
                                 <div class="col-md">
-                                 <ul class="col-md" style="margin-left: 10px;">
+                                 <ul class="col-md dist-list" style="margin-left: 10px;">
                                     <li>Stem cell yang boleh digunakan di Indonesia tidak boleh berasal dari sel embrio, selain manusia, dan tidak digunakan untuk cloning</li>
                                     <li>Stem cell yang digunakan harus diperoleh dari fasilitas laboratorium pengolah yang mendapatkan izin dari Kemenkes dan BPOM</li>
                                     <li>Oleh sebab itu, dokter, RS, dan masyarakat perlu memperhatikan sumber sel punca yang digunakan.
                                         Sampai saat ini belum ada produk massal yang mendapat izin edar dari BPOM.</li>
                                 </ul>
+                                </div>
                         </div>
-                    <div class="container">
-                        <img src="asset/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                    </div>
+
+
+                    <div class="container" style="margin-top: 20px;">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
-                                <h5>Stem Cell Punca Yang Seperti Apa Yang Boleh Digunakan di Indonesia?</h5>
+                                <h5>Laboratorium Pengolah Mana Saja Yang Sudah Berizin?</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                            <div class="row mt-3">
                                 <div class="col-md">
-                                 <ul class="col-md" style="margin-left: 10px;">
-                                    <li>Stem cell yang boleh digunakan di Indonesia tidak boleh berasal dari sel embrio, selain manusia, dan tidak digunakan untuk cloning</li>
-                                    <li>Stem cell yang digunakan harus diperoleh dari fasilitas laboratorium pengolah yang mendapatkan izin dari Kemenkes dan BPOM</li>
-                                    <li>Oleh sebab itu, dokter, RS, dan masyarakat perlu memperhatikan sumber sel punca yang digunakan.
-                                        Sampai saat ini belum ada produk massal yang mendapat izin edar dari BPOM.</li>
-                                </ul>
+                                    <img src="asset/gambar/labolatorium.jpg" alt="labolatorium_img" style="width: 100px;height:100px; float:left;width:100px;height:100px; margin-right:20px;">
+                                    <p>
+                                        Beberapa fasilitas laboratorium pengolahan sel punca telah memiliki izin operasional. diantaranya yaitu; <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf" target="_blank" style="color: #0E7478; ">Lihat daftar fasilitas </a></p>
+                                </div>
+                            </div>
+                    </div>
+                    
+
+                    <div class="container" style="margin-top:20px">
+                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <div class="custom-header ">
+                            <div class="d-flex flex-row" style="margin-left: 30px;">
+                                <div class="kotak-header">
+                                <h5>Penelitian Apa Saja Yang Sudah Dilakukan di RS Terkait Pelayanan Sel Punca?</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                            <div class="row mt-3">
+                                <div class="col-md">
+                                    <ul class="col-md dist-list" style="margin-left: 10px;">
+                                        <li>Orthopaedi</li>
+                                        <li>Kanker</li>
+                                        <li>Jantung</li>
+                                        <li>Cerebral palsy</li>
+                                        <li>Retinitis pigmentosa</li>
+                                        <li>Stroke ischemic</li>
+                                        <li>PCOS</li>
+                                        <li>Acute Myocardial Infarction</li>
+                                        <li>Osteoartritis</li>
+                                        <li>Diabetes mellitus</li>
+                                        <li>Liver cirrhosis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                         </div>
+
+                         <div class="container" style="margin-top: 20px;">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5>Penelitian Berbasis Layanan Itu Apa?</h5>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row mt-3">
+                                    <div class="col-md">
+                                        <p>
+                                            Penelitian berbasis pelayanan adalah penelitian  translasional yang mengaplikasikan terapi sel punca atau 
+                                            sel lainnya pada pasien sebagai subjek penelitian untuk tujuan terapeutik.
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="container">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5>Regulasi</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md">
+                                <p>
+                                    1. PMK No.14 Tahun 2021 tentang standar Kegiatan Usaha dan Produk Pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Kesehatan. <a href="asset/regulasi/No_14.pdf" target="_blank" style="color: #0E7478;">Lihat </a>
+                                </p>
+                                <p>
+                                    2. PMK No 32 Tahun 2018 tentang Penyelenggaraan Pelayanan Sel Punca Dan Atau Sel. <a href="asset/regulasi/No_14.pdf" target="_blank" style="color: #0E7478;">Lihat </a>
+                                </p>
+                                <p>
+                                    3. Permenkes No.62 Tahun 2013 tentang Penyelenggaraan Bank Jaringan Dan Atau Sel. <a href="asset/regulasi/No_62.pdf" target="_blank" style="color: #0E7478;">Lihat </a>
+                                </p>
+                                <p>
+                                    4. Permenkes No.50 Tahun 2012 tentang Penyelenggaraan Laboratorium Pengolahan Sel Punca Untuk Aplikasi Klinis. <a href="asset/regulasi/No_50.pdf" target="_blank" style="color: #0E7478;">Lihat </a>
+                                </p>
+                                <p>
+                                    5. Permenkes No.48 Tahun 2012 tentang Penyelenggaraan Bank Sel Punca Darah Tali Pusat. <a href="asset/regulasi/No_48.pdf" target="_blank" style="color: #0E7478;">Lihat </a>
+                                </p>
+                                </div>
+                            </div>     
+                        </div>
+
+
+                        <div class="container">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5>Video</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <div class="col-md-6 mb-2">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xKcLbxcc6oU" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Yp5vXmoK4Js" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="container"  style="margin-top: 20px;">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5>Informasi Lebih Lanjut Mengenai Sel Punca</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md">
+                                    <img src="asset/gambar/juknis mantis.jpg" alt="Sel punca" style="width: 300px;height:300px; float:left; margin-right:20px;">
+                                    <p>
+                                        Apabila mengalami kendala dalam penggunaan aplikasi ASRI, Direktorat Jenderal Pelayanan Kesehatan telah menyediakan situs pelaporan kendala yang dikenal dengan MANTIS. Silakan klik tombol dibawah untuk mengakses situs pelaporan kendala.</p>
+                                    <a href="https://ts-yankes.kemkes.go.id/"><button class="tombol">KUNJUNGI MANTIS</button></a>
+                                    <p style="margin-top: 20px;">Pelaporan kendala/pertanyaan dapat diajukan melalui :
+                                    <br>Email: asri@kemkes.go.id
+                                    <br>WA: 085819016241</p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
 
                     </div>
@@ -278,6 +451,216 @@
     </div>
     
     
+    <style>
+        @media only screen and (max-width: 600px) {
+            .hidden {
+                display: none !important;
+            }
+
+            .logo {
+                max-width: 137px;
+            }
+        }
+    </style>
+
+
+    <script>
+        $(window).on('load', function () {
+            $('#modalInfo').modal('show');
+        });
+    </script>
+    <!-- ##### About Us Area End ##### -->
+
+    <style>
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1f2937;
+        }
+
+        .bg-green-600 {
+            background-color: #61c3a2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .hidden {
+                display: none;
+            }
+
+            .logofooter {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+        .btnInstagram {
+            padding-top: 5px !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-bottom: 5px !important;
+            background-color: #C13584;
+            color: white;
+        }
+
+        .btnFacebook {
+            padding-top: 5px !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-bottom: 5px !important;
+            background-color: #4267B2;
+            color: white;
+        }
+
+        .btnYoutube {
+            padding-top: 5px !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-bottom: 5px !important;
+            background-color: #db4a39;
+            color: white;
+        }
+
+        .btnTwitter {
+            padding-top: 5px !important;
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-bottom: 5px !important;
+            background-color: #1DA1F2;
+            color: white;
+        }
+    </style>
+
+    <div class="footer" style="margin-top: 30px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <div class="col-md-5 ">
+                    <div class="logofooter">
+                        <img style="width: 75%; height:75%;" src="https://yankes.kemkes.go.id/img/logo putih.png" />
+                    </div>
+
+                    <div style="color: white; display: flex;" class="mt-3">
+                        <i style="width:20px; height:20px; display: flex;" class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </i>
+                        Jl. HR. Rasuna Said Blok X-5 Kav. 4 - 9, Kuningan, RT.1/RW.2, Kuningan, Kuningan Tim., Kota
+                        Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950
+                    </div>
+
+                    <div style="color: white; display: flex;" class="mt-3">
+                        <i style="width:20px; height:20px; display: flex;" class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                        </i>
+                        humas.yankes@kemkes.go.id
+                    </div>
+
+                    <!--<div style="color: white; display: flex;" class="mt-3">
+          <i style="width:20px; height:20px; display: flex;" class="mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+          </i>
+          021-5222432
+        </div>-->
+                    </h5>
+
+                    <div class=" mt-3">
+                        <a href="https://www.instagram.com/ditjenyankes/" class="btn btnInstagram" target="_blank"><i
+                                class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/channel/UCj_NnsqEVURJycqjWzVpRSA" class="btn btnYoutube"
+                            target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://id-id.facebook.com/ditjen.yankes" class="btn btnFacebook" target="_blank"><i
+                                class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/ditjenyankes" class="btn btnTwitter" target="_blank"><i
+                                class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 hidden">
+                    <h4 class="font-bold" style="color: white;">Satuan Kerja</h4>
+                    <ul class="text-sm">
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Sekretariat Direktorat Jenderal Pelayanan Kesehatan">Sekretariat
+                                Direktorat Jenderal Pelayanan Kesehatan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Direktorat Pelayanan Kesehatan Rujukan">Direktorat
+                                Pelayanan Kesehatan Rujukan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Direktorat Pelayanan Kesehatan Primer">Direktorat
+                                Pelayanan Kesehatan Primer</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Direktorat Tata Kelola Pelayanan Kesehatan">Direktorat
+                                Tata Kelola Pelayanan Kesehatan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Direktorat Fasilitas Pelayanan Kesehatan">Direktorat
+                                Fasilitas Pelayanan Kesehatan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/profil/satker/Direktorat Mutu Pelayanan Kesehatan">Direktorat
+                                Mutu Pelayanan Kesehatan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a
+                                style="color: white;font-size: 14px" href="https://yankes.kemkes.go.id/upt">Unit
+                                Pelaksana Tugas Pelayanan Kesehatan</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 hidden">
+                    <h4 class="font-bold" style="color: white;">Link Cepat</h4>
+                    <ul class="text-sm">
+                        <li class="text-gray-300 hover:text-white"><a style="color: white;font-size: 16px"
+                                href="https://yankes.kemkes.go.id/">Beranda</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px"
+                                href="#">Kebijakan</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/pusatbantuan">FAQ</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/sitemap">Peta Situs</a></li>
+                        <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px"
+                                href="https://yankes.kemkes.go.id/contact">Hubungi Kami</a></li>
+                    
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="px-5 lg:px-40 text-center w-full bg-green-600 text-white text-xs py-2"
+            style="color: white; font-size: 13px">
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2011-2024 Direktorat Jenderal Pelayanan Kesehatan -
+            Kementerian Kesehatan Republik Indonesia
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"
+        integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg=="
+        crossorigin="anonymous"></script>
+    <script src="https://yankes.kemkes.go.id/js/active.js"></script>
 
     
 
