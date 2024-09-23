@@ -102,6 +102,7 @@
           .custom-header {
             background-color: #f5f7f6;
             padding: 10px 20px;
+            border-radius: 5px;
           }
           
           .custom-header h5 {
@@ -113,26 +114,32 @@
           .tombol {
             padding: 10px;
             margin-left: 30px;
-            background-color: #0E7478;
+            background-color: #18b2a2;
             border: none;
             border-radius: 5px;
             color: white;
             font-weight: 500;
+        }
+            
+            .tombol:hover {
+                background-color: #0E7478;
+                text-decoration: none;
+                color: white;
+            }
 
-          }
 
         a:hover {
             text-decoration: underline;
         }
           
-          img {
-              width:200px;
-              height:200px;
-          }
           .dist-list li{
             list-style: disc;
           }
-
+        
+        .card-body {
+            padding: 30px;
+          }
+          
     </style>
 </head>
 
@@ -159,7 +166,7 @@
     <div class="container mt-2">
         <img src="asset/gambar/logopunccaa.png" alt="" class="img-fluid w-100" style="border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;">
         <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%;">
-            <div class="card-body" >
+            <div class="card-body">
                 <div class="row">
                     <div class="container">
                         <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
@@ -180,7 +187,7 @@
                     </div>
 
                     <div class="container">
-                        <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                        <img src="asset/gambar/logo_h.png" class="logo-kotak rounded float-left " alt="" style="width:20px;height:45px;">
                         <div class="custom-header ">
                             <div class="d-flex flex-row" style="margin-left: 30px;">
                                 <div class="kotak-header">
@@ -225,10 +232,8 @@
                                 </div>
                             </div>
                         <div class="">
-                            <img src="asset/gambar/suster.png" alt="suster_img" style="width: 100px;height:100px;">
-                                <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf">
-                                    <button class="tombol">LIHAT DAFTAR FASYANKES SEL PUNCA</button>
-                                </a>
+                            <img src="asset/gambar/suster.png" alt="suster_img" style="width: 150px;height:150px;">
+                            <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf" class="tombol">LIHAT DAFTAR FASYANKES SEL PUNCA</a>
                         </div>
                     </div>
 
@@ -311,7 +316,7 @@
                         </div>
                             <div class="row mt-3">
                                 <div class="col-md">
-                                    <img src="asset/gambar/labolatorium.jpg" alt="labolatorium_img" style="width: 100px;height:100px; float:left;width:100px;height:100px; margin-right:20px;">
+                                    <img src="asset/gambar/labolatorium.jpg" alt="labolatorium_img" style="width: 150px;height:150px; float:left; margin-right:30px;">
                                     <p>
                                         Beberapa fasilitas laboratorium pengolahan sel punca telah memiliki izin operasional. diantaranya yaitu; <a href="asset/regulasi/DAFTAR_FASYANKES_SEL_PUNCA.pdf" target="_blank" style="color: #0E7478; ">Lihat daftar fasilitas </a></p>
                                 </div>
@@ -432,10 +437,12 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md">
-                                    <img src="asset/gambar/juknis mantis.jpg" alt="Sel punca" style="width: 300px;height:300px; float:left; margin-right:20px;">
+                                    <a href="https://yankes.kemkes.go.id/unduhan/Juknis%20Mantis%20untuk%20TPMD%20dan%20TPMDG.pdf">
+                                        <img src="asset/gambar/juknis mantis.jpg" alt="Sel punca" style="width: 300px;height:300px; float:left; margin-right:20px;">
+                                    </a>
                                     <p>
                                         Apabila mengalami kendala dalam penggunaan aplikasi ASRI, Direktorat Jenderal Pelayanan Kesehatan telah menyediakan situs pelaporan kendala yang dikenal dengan MANTIS. Silakan klik tombol dibawah untuk mengakses situs pelaporan kendala.</p>
-                                    <a href="https://ts-yankes.kemkes.go.id/"><button class="tombol">KUNJUNGI MANTIS</button></a>
+                                    <a href="https://ts-yankes.kemkes.go.id/" class="tombol">KUNJUNGI MANTIS</a>
                                     <p style="margin-top: 20px;">Pelaporan kendala/pertanyaan dapat diajukan melalui :
                                     <br>Email: asri@kemkes.go.id
                                     <br>WA: 085819016241</p>
