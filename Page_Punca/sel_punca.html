@@ -26,8 +26,6 @@
      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" /> -->
 
 
-     <link rel="stylesheet" href="tabel_RS.html">
-
  <link rel="stylesheet" href="https://yankes.kemkes.go.id/css/style.css">
  <link rel="preconnect" href="https://fonts.googleapis.com" />
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,6 +57,36 @@
           html {
             scroll-behavior: smooth;
             
+          }
+
+          ul {
+    list-style: none; /* Menghilangkan bullet default */
+    padding-left: 0;  /* Menghapus padding default */
+    counter-reset: list-counter; /* Reset counter */
+}
+
+    .dd-spasi {
+        margin-left: 30px;
+        text-align: justify;
+        text-indent: -20px; /* Mengatur tab pada baris pertama */
+        padding-left: 20px; /* Menjaga jarak baris berikutnya dengan tab baris pertama */
+    }
+
+
+ul li {
+     /* Jarak antara item list */
+    padding-left: 30px;  /* Jarak antara angka dan teks */
+    text-align: justify; /* Meratakan teks kanan-kiri */
+    position: relative;  /* Posisi relatif untuk menggunakan ::before */
+}
+          .number li::before {
+            counter-increment: list-counter; /* Increment counter untuk setiap <li> */
+    content: counter(list-counter) ". "; /* Tampilkan angka diikuti titik */
+    color: #777777; /* Warna angka */
+    position: absolute; /* Posisikan angka agar tetap di tempat */
+    left: 0; /* Angka dimulai dari posisi kiri */
+    top: 0; /* Angka muncul di awal elemen */
+
           }
           
           h1,
@@ -143,7 +171,6 @@
           }
           
           
-            /* "w-9 h-9 bg-sky-500 rounded-full flex fixed bottom-7 right-7" */
 
         .card-body {
             padding: 30px;
@@ -167,63 +194,82 @@
 </head>
 
 <body>
-    <header class="header-area">
-        <!-- Navbar Area -->
-        <div class="news-main-menu" id="sticker">
-            <div class="classy-nav-container breakpoint-off">
-    
-                <!-- Menu -->
-                <nav style="height:70px;"class="classy-navbar justify-content-between" id="magNav">
-    
-                    <!-- Nav brand -->
-                    <a href="https://yankes.kemkes.go.id/" class="nav-brand logo"><img src="https://yankes.kemkes.go.id/img/LogoKemKes.png" alt=""></a>
-    
-                    
-            <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span>
-                    </div>
-    
-                    <!-- Nav Content -->
-                    <div class="nav-content d-flex align-items-center">
-                        <div class="classy-menu">
-    
-                            <!-- Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-    
-                            <!-- Nav Start -->
-                                <div class="classynav">
-                                    <ul>
-                                        <li class="active"><a href="https://yankes.kemkes.go.id/">Beranda</a></li>
+
+          <!-- ##### Header Area Start ##### -->
+<style>
+
+    @media only screen and (max-width: 600px) {
+    .hidden {
+        display: none !important;
+    	}
+
+    .logo {
+	max-width: 137px;
+        }
+    }
+</style>
+
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div class="news-main-menu" id="sticker">
+        <div class="classy-nav-container breakpoint-off">
+
+            <!-- Menu -->
+            <nav style="height:70px;"class="classy-navbar justify-content-between" id="magNav">
+
+                <!-- Nav brand -->
+                <a href="https://yankes.kemkes.go.id/" class="nav-brand logo"><img src="https://yankes.kemkes.go.id/img/LogoKemKes.png" alt=""></a>
+
+                
+		<!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+
+                <!-- Nav Content -->
+                <div class="nav-content d-flex align-items-center">
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                                                    <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="https://yankes.kemkes.go.id/">Beranda</a></li>
                                         <li><a href="#regulasi">Regulasi</a>
                                         </li>
                                         <li><a href="#video">Video</a></li>
                                         <li><a href="#info">info</a></li>
-                                    </ul>
-                                </div>
-                            
-                            <!-- Nav End -->
-                        </div>
-    
-                        <div class="top-meta-data d-flex align-items-center ">
-                            <!-- Top Search Area -->
-                            <div class="top-search-area">
-                                <form action="https://yankes.kemkes.go.id/Cari" method="get">
-                                    <input type="search" name="q" id="q" placeholder="Search and hit enter..." value="" required>
-                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
+                                </ul>
                             </div>
-                            <!-- Login -->
-                                                        <!-- <a href="" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a> -->
-                            
-                        </div>
+                        
+                        <!-- Nav End -->
                     </div>
-                </nav>
-            </div>
+
+                    <div class="top-meta-data d-flex align-items-center ">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="https://yankes.kemkes.go.id/Cari" method="get">
+                                <input type="search" name="q" id="q" placeholder="Search and hit enter..." value="" required>
+                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <!-- Login -->
+                                                    <!-- <a href="" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a> -->
+                        
+                    </div>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+
+<!-- ##### Header Area End ##### -->
+
+
         <!-- Content here -->
       <div class="mag-breadcrumb py-3">
         <div class="container">
@@ -232,7 +278,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="https://yankes.kemkes.go.id"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Punca</li>
+                            <li class="breadcrumb-item active" aria-current="page">Sel Punca</li>
                         </ol>
                     </nav>
                 </div>
@@ -242,7 +288,7 @@
 
 
     <div class="container">
-        <img src="asset/gambar/logoSelPunca.png" alt="" class="img-fluid w-100" style="border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;">
+        <img src="asset/gambar/Group 1.png" alt="logoselpunca" class="img-fluid w-100" style="border-bottom-left-radius: 0%; border-bottom-right-radius: 0%; height: 200px;">
         <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%;">
             <div class="card-body">
                 <div class="row">
@@ -328,12 +374,12 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-md">
-                                <ul class="col-md dist-list text-justify style="margin-left: 5px;">
+                                <ul class="col-md dist-list text-justify" style="margin-left: 5px;">
                                     <li>Setiap terapi yang dilakukan pasti memiliki risiko. risiko pemberian <strong>Sel Punca <span style="font-style: italic;">(Stem Cell)</span></strong> dipengaruhi oleh beberapa faktor diantaranya :</li>
                                     <dl>
-                                        <dd>- Kondisi pasien (pasien harus memenuhi persyaratan screening, resiko reaksi hipersensitivitas).</dd>
-                                        <dd>- Produk sel punca yang digunakan, metode pemberian, dan lokasi pemberian.</dd>
-                                        <dd>- Terapi sel dapat menyebabkan respon imun yang tidak diinginkan, meningkatkan risiko tumor, serta 2 menimbulkan toksisitas dan hipersensitivitas pada beberapa pasien.</dd>                                                                            
+                                        <dd class="dd-spasi">- Kondisi pasien (pasien harus memenuhi persyaratan screening, resiko reaksi hipersensitivitas).</dd>
+                                        <dd class="dd-spasi">- Produk sel punca yang digunakan, metode pemberian, dan lokasi pemberian.</dd>
+                                        <dd class="dd-spasi">- Terapi sel dapat menyebabkan respon imun yang tidak diinginkan, meningkatkan risiko tumor, serta 2 menimbulkan toksisitas dan hipersensitivitas pada beberapa pasien.</dd>                                                                            
                                     </dl>
                                     <li>Oleh sebab itu, pelaksanaan terapi harus dilakukan oleh dokter sesuai keahliannya dan di fasyankes yang mendapat izin.</a></span></li>
                                 </ul>
@@ -417,7 +463,7 @@
                         </div>
                             <div class="row mt-3">
                                 <div class="col-md">
-                                    <ul class="col-md dist-list" style="margin-left: 5px;">
+                                    <ul class="col-md dist-list" style="margin-left: 5px; ">
                                         <li>Orthopaedi</li>
                                         <li>Kanker</li>
                                         <li>Jantung</li>
@@ -470,9 +516,9 @@
                                     <ul class="col-md dist-list" style="margin-left: 5px;">
                                         <li>UU No. 17 tahun 2023  tentang Kesehatan. </li>
                                         <li>PP 28 Tahun 2024 tentang Petunjuk Pelaksana UU Kesehatan.</li>
-                                        <li>Permenkes NO 14 TAHUN 2021 Standar Kegiatan Usaha Dan Produk Pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Kesehatan
+                                        <li>Permenkes NO 14 TAHUN 2021 Standar Kegiatan Usaha Dan Produk Pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Kesehatan.
                                         </li>
-                                        <a  href="tabel regulasi.html" target="_blank" style="color: #0E7478;">Lihat Lebih banyak </a>
+                                        <a  href="tabel regulasi.html" target="_blank" style="color: #0E7478; margin-left: 30px;">Lihat Lebih banyak </a>
                                     </ul>
                                     
                                 </div>
@@ -502,6 +548,60 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+
+                        <div class="container">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5>Komite</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container text-center">
+                                <div class="row">
+                                  <div class="col">
+                                    <img src="asset/gambar/komitefoto1.png" alt="" style="width: 500px;">
+                                  </div>
+                                  <div class="col">
+                                    <img src="asset/gambar/komitefoto2.png" alt="" style="width: 500px;">
+                                  </div>
+                                </div>
+                            </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md">
+                                        <p >
+                                            Berdasarkan Keputusan Menteri Kesehatan Nomor  5679 tahun 2021 tentang Komite Pengembangan Sel Punca dan Sel.
+                                        </p>
+                                        <p>Komite sebagaimana dimaksud bertugas:</p>
+                                        <ul class="number">
+                                            <li>
+                                            Memberikan masukan dan pertimbangan kepada Menteri dalam pengambilan kebijakan pengembangan sel punca,dan sel, termasuk pembinaan dan pengawasan pelayanan
+                                            bank jaringan dan sel punca di fasilitas pelayanan kesehatan; 
+                                            </li>
+                                            <li>Berkoordinasi dengan instansi dan lembaga terkait;
+                                            </li>
+                                            <li>Memberikan rekomendasi pemberian dan pencabutan izin pengembangan sel punca dan rekayasa jaringan di fasilitas pelayanan kesehatan;
+                                            </li>
+                                            <li>
+                                            Membina etika dalam penelitian dan pelayanan sel punca dan rekayasa jaringan;
+                                            </li>
+                                            <li>
+                                            Membentuk jejaring peneliti pada lembaga-lembaga penelitian berbasis pelayanan/penyelenggaraan pelayanan sel punca dan rekayasa jaringan;
+                                            </li>
+                                            <li>
+                                            Membuat laporan pelaksanaan pembinaan dan pengawasan secara berkala kepada Menteri paling sedikit 2 (dua) kali dalam 1 (satu) tahun; dan
+                                            </li>
+                                            <li>
+                                            Membuat laporan kepada Menteri pada akhir masa jabatannya
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                         </div>
                     
                         <div class="container" id="info">
@@ -752,5 +852,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
+    <script src="https://yankes.kemkes.go.id/js/active.js"></script>
+</body>
 </body>
 </html>
