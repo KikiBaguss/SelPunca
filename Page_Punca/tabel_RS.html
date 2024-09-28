@@ -92,6 +92,17 @@
             color:black;
         }
 
+        .nav-item :hover {
+            color: #0E7478;
+            font-weight:500
+        }
+
+        .nav-link {
+            padding: 0px 0px 0px 20px;
+             
+        }
+        
+
         </style>
 
         <!-- JS -->
@@ -111,153 +122,77 @@
 
 
 <body>
+
     
-    <header class="header-area">
-        <!-- Navbar Area -->
-        <div class="news-main-menu" id="sticker">
-            <div class="classy-nav-container breakpoint-off">
-    
-                <!-- Menu -->
-                <nav style="height:70px;"class="classy-navbar justify-content-between" id="magNav">
-    
-                    <!-- Nav brand -->
-                    <a href="https://yankes.kemkes.go.id/" class="nav-brand logo"><img src="https://yankes.kemkes.go.id/img/LogoKemKes.png" alt=""></a>
-    
-                    
-            <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span>
+        <!-- nav home/sel punca -->
+        <div class="mag-breadcrumb" style="margin-top: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb" >
+                            <ol class="breadcrumb" style="margin-bottom:20px ;">
+                                <li class="breadcrumb-item"><a href="https://yankes.kemkes.go.id"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a></li>
+                                <li class="breadcrumb-item"><a href="sel_punca.html"><i aria-hidden="true"></i> Sel Punca</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> Daftar Fasyankes</li>
+                            </ol>
+                        </nav>
                     </div>
-    
-                    <!-- Nav Content -->
-                    <div class="nav-content d-flex align-items-center">
-                        <div class="classy-menu">
-    
-                            <!-- Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-    
-                            <!-- Nav Start -->
-                                <div class="classynav">
-                                    <ul>
-                                        <li class="active"><a href="https://yankes.kemkes.go.id/">Beranda</a></li>
-                                        <li><a href="#">Rumah Sakit</a>
-                                        </li>
-                                        <li><a href="#labolatorium">Labolatorium</a></li>
-                                        <li><a href="#bank">Bank Sel</a></li>
-                                    </ul>
-                                </div>
-                            
-                            <!-- Nav End -->
-                        </div>
-    
-                        <div class="top-meta-data d-flex align-items-center ">
-                            <!-- Top Search Area -->
-                            <div class="top-search-area">
-                                <form action="https://yankes.kemkes.go.id/Cari" method="get">
-                                    <input type="search" name="q" id="q" placeholder="Search and hit enter..." value="" required>
-                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                            <!-- Login -->
-                                                        <!-- <a href="" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a> -->
-                            
-                        </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
-    </header>
-
-<div class="font-poppins">
-    <!-- Preloader -->
-    <!-- <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
+        
+         <!-- navbar -->
+          <div class="mag-breadcrumb" style="margin-bottom: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" >
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb" style="margin: 0px;">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#rumahsakit">Rumah Sakit</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#labolatorium">Labolatorium</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#banksel">Bank Sel</a>
+                                  </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
-
-    <!-- ##### Header Area Start ##### -->
-    <style>
-        @media only screen and (max-width: 600px) {
-            .hidden {
-                display: none !important;
-            }
-
-            .logo {
-                max-width: 137px;
-            }
-        }
-    </style>
-
-
-
-    <!-- ##### Header Area End ##### -->
-    <style>
-        @media only screen and (min-width: 600px) {
-            .simrsgos {
-                
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: 100%;
-            }
-        }
-
-        .card-app {
-            display: block;
-            border: 1px white;
-            border-radius: 12px;
-            position: relative;
-            min-width: 0;
-            min-height: 118px;
-            max-height: 118px;
-            word-wrap: break-word;
-            background-color: white;
-            background-clip: border-box;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.10) !important;
-
-        }
-
-        .card-app:hover {
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.10) !important;
-        }
-    </style>
+    
+    
+        <!-- Isi content -->
+        <div class="container" style="margin-top: 0%;">
+            <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="container">
+                            <img src="asset/gambar/logo_h.png" class="rounded float-left" alt="" style="width:20px;height:45px;">
+                            <div class="custom-header ">
+                                <div class="d-flex flex-row" style="margin-left: 30px;">
+                                    <div class="kotak-header">
+                                    <h5 style="margin: 0%;">Daftar Fasyankes Sel Punca <span class="steam-cell-head">(STEM CELL)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </section>
 
 
-    <!-- ##### Breadcrumb Area End ##### -->
-    <!-- Content here -->
-</div>
-<div class="mag-breadcrumb py-3">
-  <div class="container">
-      <div class="row">
-          <div class="col-12">
-              <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="https://yankes.kemkes.go.id"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a></li>
-                      <li class="breadcrumb-item"><a href="sel_punca.html">Sel Punca</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Daftar Fasyankes</li>
-                  </ol>
-              </nav>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="container">
+<div id="rumahsakit"class="container" style="padding: 0px 30px;">
     <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-bottom-left-radius: 0%;">
         <div class="card-body">
             <div class="row">
                 <div class="container">
                     <div>
                         <div class="d-flex flex-row">
-                            <div>
-                            <h5 style="margin:0%">Daftar Fasyankes Sel Punca <span class="steam-cell-head">(Stem Cell)</span></h5>
-                            </div>
+                            <h5 style="margin:0%">RUMAH SAKIT PENYELENGGARA PENELITIAN BERBASIS PELAYANAN SEL PUNCA <span class="steam-cell-head">(Stem Cell)</span> DAN SEL DI INDONESIA : </h5>
                         </div>
                     </div>
                 </div>
@@ -266,11 +201,8 @@
         </div>
     </div>
 </div>
-
-
-
     <section class="simrsgos">
-        <div class="container">
+        <div class="container" style="padding: 0px 30px;">
 
 
             <!-- Optional JavaScript -->
@@ -378,7 +310,7 @@
                         <td>Medan</td>
                         <td class="text-center"> <a href="/Sel-Punca/Page_Punca/asset/regulasi/No_32.pdf" target="_blank" style="color: black; text-decoration: none;"> PMK NO.32</a></td>
                     </tr>  
-                    <tr id="labolatorium">
+                    <tr>
                         <th scope="row">16</th>
                         <td>RS Atmajaya</td>
                         <td>Jakarta</td>
@@ -390,12 +322,25 @@
     </section >
 
 
-    
-    <div id="labolatorium">
-                
+
+    <div id="labolatorium" class="container" style="padding: 0px 30px; margin-top: 20px;">
+        <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-bottom-left-radius: 0%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="container">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <h5 style="margin:0%">LABORATORIUM PENGOLAH SEL PUNCA <span class="steam-cell-head">(STEM CELL)</span> : </h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <section class="simrsgos">
-        <div class="container">
+        <div class="container" style="padding: 0px 30px;">
 
 
 
@@ -493,15 +438,31 @@
         </div>
     </section>
 
+
+    <div id="banksel" class="container" style="padding: 0px 30px; margin-top: 20px;">
+        <div class="card shadow-sm"style="border-top-left-radius: 0%; border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-bottom-left-radius: 0%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="container">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <h5 style="margin:0%">BANK SEL PUNCA <span class="steam-cell-head">(STEM CELL)</span> : </h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="simrsgos">
-        <div class="container">
+        <div class="container" style="padding: 0px 30px;">
 
 
 
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-            <div id="bank"></div>
             <table class="table tabel-hover table-striped table-bordered">
                 <thead class="thead-dark">
                     <tr>
@@ -544,6 +505,9 @@
             </table>
         </div>
     </section>
+
+            </div>
+        </div>
 
       <!-- footer -->
     <style>
@@ -746,6 +710,63 @@
     </div>
     </div>
     </div>
+
+    <!-- scroll button up -->
+<style>
+    #scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #18b2a2;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    #scrollTopBtn:hover {
+        background-color: #b8d154;
+    }
+</style>
+
+<button id="scrollTopBtn" title="Kembali ke atas"><img src="asset/gambar/up.png" alt=""></button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+                
+                // Efek paralaks
+                let paralaxOffset = (scrollTop - lastScrollTop) * 0.5;
+                scrollTopBtn.style.transform = `translateY(${paralaxOffset}px)`;
+                
+                // Fade in/out berdasarkan posisi scroll
+                let opacity = Math.min((scrollTop - 200) / 300, 1);
+                scrollTopBtn.style.opacity = opacity;
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <!-- samape sini scrol -->
 
 
 
