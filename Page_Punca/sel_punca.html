@@ -19,31 +19,18 @@
      <!-- Favicon -->
      <link rel="icon" href="https://yankes.kemkes.go.id/faticon.ico">
 
-     <!-- <link href="https://yankes.kemkes.go.id/css/fullcalendar.min.css" rel="stylesheet" />
-     <link href="https://yankes.kemkes.go.id/css/fullcalendar.print.min.css" rel="stylesheet" media="print" /> -->
-     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
-     <!-- <link rel="stylesheet" href="https://yankes.kemkes.go.id/css/select2.min.css"/> -->
-     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" /> -->
-
 
  <link rel="stylesheet" href="https://yankes.kemkes.go.id/css/style.css">
  <link rel="preconnect" href="https://fonts.googleapis.com" />
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
      rel="stylesheet" />
- <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
      rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
  <script src="https://yankes.kemkes.go.id/ckeditor/ckeditor.js" type="text/javascript"></script>
         <script src="https://yankes.kemkes.go.id/js/jquery/jquery-2.2.4.min.js"></script>
         <script src="https://yankes.kemkes.go.id/js/plugins/plugins.js"></script>
-        <!-- <script src="https://yankes.kemkes.go.id/js/moment.min.js"></script>
-    <script src="https://yankes.kemkes.go.id/js/fullcalendar.min.js"></script> -->
-        <!-- <script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script> -->
-        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-        <!-- <script src="https://yankes.kemkes.go.id/js/select2.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script> -->
 
     <style>
         * {
@@ -60,10 +47,10 @@
           }
 
           ul {
-    list-style: none; /* Menghilangkan bullet default */
-    padding-left: 0;  /* Menghapus padding default */
-    counter-reset: list-counter; /* Reset counter */
-}
+        list-style: none; /* Menghilangkan bullet default */
+        padding-left: 0;  /* Menghapus padding default */
+        counter-reset: list-counter; /* Reset counter */
+        }
 
     .dd-spasi {
         margin-left: 30px;
@@ -203,7 +190,25 @@ ul li {
         .breadcrumb {
             margin: 0%;
         }
+
+        a:hover {
+            color: #0E7478;
+        }
           
+
+        /* Mobile styles */
+        @media screen and (max-width: 600px) {
+            .tombol {
+                display: flex;
+                margin-top: 10px;
+                margin-left: 0px;
+            }
+            
+            .spasi-yt {
+                margin-top: 10px;
+            }
+        }
+
     </style>
 </head>
 
@@ -523,7 +528,7 @@ ul li {
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="embed-responsive embed-responsive-16by9"  style="border-radius: 5px;">
+                                    <div class="embed-responsive embed-responsive-16by9 spasi-yt"  style="border-radius: 5px;">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Yp5vXmoK4Js" allowfullscreen></iframe>
                                     </div>
                                 </div>
