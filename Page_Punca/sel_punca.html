@@ -197,17 +197,30 @@ ul li {
           
 
         /* Mobile styles */
-        @media screen and (max-width: 600px) {
-            .tombol {
-                display: flex;
-                margin-top: 10px;
-                margin-left: 0px;
-            }
-            
-            .spasi-yt {
-                margin-top: 10px;
-            }
-        }
+@media screen and (max-width: 600px) {
+    .tombol {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .spasi-yt {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) { /* Koreksi di sini */
+    .tombol {
+        display: flex;
+        flex-direction: column; /* Kolom agar tombol turun ke bawah */
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .spasi-yt {
+        margin-top: 10px;
+    }
+}
 
     </style>
 </head>
