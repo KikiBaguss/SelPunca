@@ -1,11 +1,11 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/sel_punca2.html" },
-    { "src": "/Tabel", "dest": "/TableRS_No_regulasi.html" }
+  "rewrites": [
+    { "source": "/", "destination": "/sel_punca2.html" },
+    { "source": "/Tabel", "destination": "/TableRS_No_regulasi.html" }
   ],
   "headers": [
     {
-      "source": "/(.*).html",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Type",
