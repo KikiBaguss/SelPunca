@@ -1,0 +1,17 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/sel_punca2.html" },
+    { "src": "/Tabel", "dest": "/TableRS_No_regulasi.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
+  ]
+}
