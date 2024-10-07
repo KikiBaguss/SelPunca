@@ -1,7 +1,8 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/sel_punca2.html" },
-    { "source": "/Tabel", "destination": "/TableRS_No_regulasi.html" }
+    { "source": "/Tabel", "destination": "/TableRS_No_regulasi.html" },
+    { "source": "/Regulasi", "destination":"/tabel_regulasi.html"}
   ],
   "headers": [
     {
